@@ -1,4 +1,3 @@
-
 require_relative './book'
 require_relative 'game'
 
@@ -21,7 +20,7 @@ class Main
       list_books if option == 1
       list_games if option == 3
       list_authors if option == 6
-    #   add_musica if option == 8
+      #   add_musica if option == 8
       add_game if option == 9
       add_book if option == 7
     end
