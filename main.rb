@@ -1,5 +1,8 @@
-require_relative './book'
-require_relative 'game'
+require_relative './modules/book'
+require_relative './modules/game'
+require_relative './modules/music'
+require_relative './modules/genre'
+require_relative './saveData/music_albums'
 
 class Main
   def initialize
@@ -7,24 +10,29 @@ class Main
     @games = []
     @authors = []
     @labels = []
+    @albums = []
+    @genres = []
   end
 
-  def start
-    puts 'Welcome to the App'
-    puts 'Choose an option below:'
+  # def start
+  #   puts 'Welcome to the App'
+  #   puts 'Choose an option below:'
 
-    loop do
-      option = list_options
-      break if option == 10
+  #   loop do
+  #     option = list_options
+  #     break if option == 10
 
-      list_books if option == 1
-      list_games if option == 3
-      list_authors if option == 6
-      #   add_musica if option == 8
-      add_game if option == 9
-      add_book if option == 7
-    end
-  end
+  #     list_books if option == 1
+  #     list_albums if option == 2
+  #     list_games if option == 3
+  #     list_genres if option == 4
+  #     list_labels if option == 5
+  #     list_authors if option == 6
+  #     add_book if option == 7
+  #     add_album if option == 8
+  #     add_game if option == 9
+  #   end
+  # end
 
   def list_options
     puts '1. List all books'
