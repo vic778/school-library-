@@ -1,0 +1,26 @@
+[
+  {
+    "GenreId": 142,
+    "GenreName": "pop"
+  },
+  {
+    "GenreId": 237,
+    "GenreName": "Blues"
+  },
+  {
+    "GenreId": 906,
+    "GenreName": "R&B"
+  },
+  {
+    "GenreId": 747,
+    "GenreName": "hip-hop"
+  },
+  {
+    "GenreId": 551,
+    "GenreName": "pop"
+  },
+  {
+    "GenreId": 975,
+    "GenreName": "comedy"
+  }
+]
