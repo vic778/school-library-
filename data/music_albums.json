@@ -6,5 +6,9 @@
   {
     "on_spotify": false,
     "Publish_date": "2000-11-09"
+  },
+  {
+    "on_spotify": true,
+    "Publish_date": "2022-03-11"
   }
 ]
