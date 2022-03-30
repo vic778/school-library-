@@ -4,7 +4,7 @@ require_relative './modules/music'
 require_relative './modules/genre'
 require_relative './saveData/music_albums'
 require_relative './saveData/save_book'
-require_relative './list_item.rb'
+require_relative './list_item'
 
 class Main
   include ListItems
