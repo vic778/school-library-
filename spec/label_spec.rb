@@ -1,4 +1,3 @@
-
 require_relative '../modules/label'
 require_relative '../modules/book'
 
