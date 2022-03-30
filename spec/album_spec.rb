@@ -1,7 +1,7 @@
 require_relative '../modules/music'
 
 describe MusicAlbum do
-  context 'Should test MusicAlbum class' do 
+  context 'Should test MusicAlbum class' do
     album = MusicAlbum.new '2020-12-03', true
 
     it 'album should be MusicAlbum instance' do
