@@ -4,7 +4,7 @@ require_relative './modules/music'
 require_relative './modules/genre'
 require_relative './saveData/music_albums'
 require_relative './saveData/save_book'
-require_relative './listItem'
+require_relative './list_item.rb'
 
 class Main
   include ListItems
@@ -16,7 +16,6 @@ class Main
     @albums = []
     @genres = []
   end
-
 
   def start
     puts 'Welcome to the App'
