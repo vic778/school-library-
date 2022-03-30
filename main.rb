@@ -9,12 +9,13 @@ require_relative './list_item'
 class Main
   include ListItems
   include SaveBooks
+  include SaveAlbums
 
   def initialize
     @books = load_books
     @games = []
-    @albums = []
-    @genres = []
+    @albums = load_albums
+    @genres = load_genres
   end
 
   def start
@@ -36,7 +37,7 @@ class Main
       list_labels if option == 5
       list_authors if option == 6
       add_book if option == 7
-      create_album if option == 8
+      add_album if option == 8
       add_game if option == 9
     end
   end
