@@ -60,6 +60,3 @@ end
 
 main = Main.new
 main.start
-
-main = Main.new
-main.start
