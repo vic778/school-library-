@@ -17,6 +17,7 @@ CREATE TABLE games (
   multiplayer VARCHAR(255),
   last_played_at DATE,
   PRIMARY KEY (id),
+  FOREIGN KEY (id) REFERENCES items (id)
 );
 -- Create authors table
 CREATE TABLE authors (
@@ -32,6 +33,7 @@ CREATE TABLE books (
   title VARCHAR(100),
   publisher VARCHAR(100),
   cover_state VARCHAR(100),
+  FOREIGN KEY (id) REFERENCES items (id)
 );
 
 -- create labels table
@@ -43,9 +45,10 @@ CREATE TABLE labels (
 );
 
 -- create music album table
-CREATE TABLE music albums (
+CREATE TABLE music_albums (
   id INT
   on_spotify BOOLEAN,
+  FOREIGN KEY (id) REFERENCES items (id)
 );
 
 -- create genres table
