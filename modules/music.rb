@@ -15,6 +15,3 @@ class MusicAlbum < Item
     super && on_spotify == true
   end
 end
-
-# ms = MusicAlbum.new(true, 'rock','2020-04-03')
-# print ms.genre
