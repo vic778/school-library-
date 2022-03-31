@@ -10,20 +10,6 @@ CREATE TABLE IF NOT EXISTS `items` (
   archived BOOLEAN,
   PRIMARY KEY (id),
 );
-ALTER TABLE target
-   ADD PRIMARY KEY (t_id);
- 
-CREATE INDEX ON target (t_label);
-
-ALTER TABLE target
-   ADD PRIMARY KEY (t_id);
- 
-CREATE INDEX ON target (t_author);
-
-ALTER TABLE target
-   ADD PRIMARY KEY (t_id);
- 
-CREATE INDEX ON target (t_genres;
 
 -- Create games table
 CREATE TABLE games (
@@ -71,3 +57,7 @@ CREATE TABLE genres (
   name VARCHAR(100),
   PRIMARY KEY (id)
 );
+
+CREATE INDEX label_id_index ON item(label_id ASC);
+CREATE INDEX author_id_index ON item(author_id ASC);
+CREATE INDEX genres_id_index ON item(genre_id ASC);
