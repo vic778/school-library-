@@ -17,7 +17,6 @@ CREATE TABLE games (
   multiplayer VARCHAR(255),
   last_played_at DATE,
   PRIMARY KEY (id),
-  FOREIGN KEY (id) REFERENCES items (id)
 );
 -- Create authors table
 CREATE TABLE authors (
@@ -33,7 +32,6 @@ CREATE TABLE books (
   title VARCHAR(100),
   publisher VARCHAR(100),
   cover_state VARCHAR(100),
-  FOREIGN KEY (id) REFERENCES items (id)
 );
 
 -- create labels table
@@ -48,7 +46,6 @@ CREATE TABLE labels (
 CREATE TABLE music albums (
   id INT
   on_spotify BOOLEAN,
-  FOREIGN KEY (id) REFERENCES items (id)
 );
 
 -- create genres table
@@ -58,6 +55,8 @@ CREATE TABLE genres (
   PRIMARY KEY (id)
 );
 
-CREATE INDEX label_id_index ON item(label_id ASC);
-CREATE INDEX author_id_index ON item(author_id ASC);
-CREATE INDEX genres_id_index ON item(genre_id ASC);
+CREATE INDEX label_id_index ON item(label_id);
+CREATE INDEX author_id_index ON item(author_id);
+CREATE INDEX genres_id_index ON item(genre_id );
+CREATE INDEX item_id_index ON music albums(item_id );
+CREATE INDEX item_id_index ON music books(item_id );
