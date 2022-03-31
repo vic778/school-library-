@@ -9,10 +9,21 @@ CREATE TABLE IF NOT EXISTS `items` (
   author_id INT,
   archived BOOLEAN,
   PRIMARY KEY (id),
-  FOREIGN KEY (label_id) REFERENCES labels(id),
-  FOREIGN KEY (author_id) REFERENCES authors(id),
-  FOREIGN KEY (genre_id) REFERENCES genres(id),
 );
+ALTER TABLE target
+   ADD PRIMARY KEY (t_id);
+ 
+CREATE INDEX ON target (t_label);
+
+ALTER TABLE target
+   ADD PRIMARY KEY (t_id);
+ 
+CREATE INDEX ON target (t_author);
+
+ALTER TABLE target
+   ADD PRIMARY KEY (t_id);
+ 
+CREATE INDEX ON target (t_genres;
 
 -- Create games table
 CREATE TABLE games (
