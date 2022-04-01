@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
->Sschool library app that implement the classes to represent students and teachers.
+> A console app that will help you to keep a record of different types of things you won: books, music albums, movies, and games 
 
 ## Built With
 
@@ -18,6 +18,12 @@
 - GitHub: [@vic778](https://github.com/vic778)
 - Twitter: [@VictoirBarh](https://twitter.com/VictoirBarh)
 - LinkedIn: [Victoir barherenduba](https://www.linkedin.com/in/victor-emmanuel-barh-a93900200/)
+
+👤 **Victor Chukwuemeka**
+
+- GitHub: [@githubhandle](https://github.com/chukwuemeka1234/)
+- Twitter: [@twitterhandle](https://twitter.com/@avc_victor)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vic-chukwuemeka/)
 
 ## 🤝 Contributing
 
